@@ -112,3 +112,8 @@ a:hover {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
+.fa-star {
+  color: #999;
+  padding-right: 0.5em;
+}
