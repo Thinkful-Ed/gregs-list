@@ -54,42 +54,42 @@ a:hover {
 }
 
 .search-section {
-  margin-bottom: 2em;
+  margin-bottom: 30px;
 }
 
 .search-section input {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 2em;
-  height: 2em;
+  line-height: 30px;
+  height: 30px;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
-  padding: 0 0.25em 0 0.5em;
+  padding: 0 5px 0 8px;
   width: 400px;
 }
 
 .search-section button {
-  font-size: 1.1em;
-  height: 2em;
+  font-size: 17px;
+  height: 30px;
   background-color: white;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
 }
 
 .pages {
-  margin-bottom: 2em;
+  margin-bottom: 30px;
 }
 
 .pages-button {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 8px 15px;
   background-color: #EEEEEE;
   border-radius: 3px;
 }
 
 .pages-display {
-  padding: 0 1em;
+  padding: 0 30px;
 }
 
 .listings {
@@ -98,7 +98,7 @@ a:hover {
 
 .listing {
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: 15px;
 }
 
 .listing-date ,
@@ -108,12 +108,12 @@ a:hover {
 
 .listing-title {
   font-weight: bold;
-  font-size: 1.2em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  font-size: 17px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .fa-star {
   color: #999;
-  padding-right: 0.5em;
+  padding-right: 8px;
 }
