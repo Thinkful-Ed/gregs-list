@@ -72,3 +72,30 @@ nav a {
   border: 1px solid #DDDDDD;
   border-radius: 3px;
 }
+
+
+/* Tricky */
+.pages {
+  font-size: 0;
+}
+
+.pages-box {
+  border: 1px solid #E0E0E0;
+  display: inline-block;
+  font-size: 15px; /* Tricky: ems don't work here !!!!! */
+  padding: 8px 12px;
+}
+
+/* Tricky */
+.pages-box + .pages-box {
+  border-left-width: 0;
+}
+
+/* Tricky / students will often use too generic a css class name */
+.pages-box-left-curved {
+  border-radius: 15px 0 0 15px; /* 50% produces mismatched size of radius */
+}
+
+.pages-box-right-curved {
+  border-radius: 0 15px 15px 0;
+}
