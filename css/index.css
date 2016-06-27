@@ -17,7 +17,7 @@ header {
   padding: 10px;
 
   background-color: #EEEEEE;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 nav {
@@ -78,18 +78,26 @@ a:hover {
 }
 
 .pages {
+  display: inline-block; /* Tricky, this could start wrapping!  */
+  font-size: 0;
   margin-bottom: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
 }
 
 .pages-button {
+  font-size: 16px;
   display: inline-block;
   padding: 8px 15px;
-  background-color: #EEEEEE;
   border-radius: 3px;
 }
 
 .pages-display {
+  font-size: 16px;
   padding: 0 30px;
+  padding: 8px 25px;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
 }
 
 .listings {
