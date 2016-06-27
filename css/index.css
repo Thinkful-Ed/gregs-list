@@ -89,6 +89,7 @@ nav a {
   display: inline-block;
   font-size: 15px; /* Tricky: ems don't work here !!!!! */
   padding: 5px 8px;
+  color: #aaaaaa;
 }
 
 /* Tricky */
@@ -103,6 +104,10 @@ nav a {
 
 .pages-box-right-curved {
   border-radius: 0 10px 10px 0;
+}
+
+.pages-box-black {
+  color: black;
 }
 
 /* stare at the abyss, and the abyss stares back at you */
