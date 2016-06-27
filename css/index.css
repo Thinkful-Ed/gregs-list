@@ -4,7 +4,8 @@
 
 body {
   margin: 0; /* Tricky: override browser default */
-  padding: 68px 36px;
+
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -12,8 +13,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  max-width: 762px;
-  padding: 4px;
+  padding: 10px;
 
   background-color: #EEEEEE;
   border-bottom: 1px solid #cccccc;
@@ -21,31 +21,17 @@ header {
 
 nav {
   position: absolute;
-  right: 5px;
-  top: 6px;
-}
-
-nav span {
-  border-left: 1px solid #d5d5d5;
-  border-right: 1px solid #AAAAAA;
-  margin-right: 5px;
-}
-
-nav a {
-  font-family: "Arial", sans-serif;
-  text-decoration: none;
+  right: 10px;
+  top: 10px;
 }
 
 .gl-logo {
   display: inline-block;
   border-radius: 100%;
-  background-color: white;
-  border: 1px solid #cccccc;
-  padding: 3px 5px 8px;
+  font-weight: 800;
 }
 
 .gl-logo h1 {
-  font-family: "Arial", sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -80,7 +66,6 @@ nav a {
 
 /* Tricky */
 .pages {
-  font-family: "Arial", sans-serif;
   font-size: 0;
   margin-bottom: 32px; /* Tricky: 2em doesn't work because of font-size: 0; */
 }
