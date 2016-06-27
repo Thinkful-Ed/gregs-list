@@ -54,7 +54,7 @@ nav a {
 }
 
 .search-section {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .search-section input {
@@ -82,12 +82,13 @@ nav a {
 .pages {
   font-family: "Arial", sans-serif;
   font-size: 0;
+  margin-bottom: 32px; /* Tricky: 2em doesn't work because of font-size: 0; */
 }
 
 .pages-box {
   border: 1px solid #E0E0E0;
   display: inline-block;
-  font-size: 15px; /* Tricky: ems don't work here !!!!! */
+  font-size: 15px; /* Tricky: ems don't work for font size either here */
   padding: 5px 8px;
   color: #aaaaaa;
 }
@@ -113,6 +114,7 @@ nav a {
 /* stare at the abyss, and the abyss stares back at you */
 
 .row {
+  margin: .9em 0 1em ; /* almost impossible to get right w/o copy pasta */
 }
 
 
@@ -151,4 +153,8 @@ a:hover {
 /* Tricky: why an extra layer of nesting in html here? */
 .row span.p .maptag {
   color: #080;
+}
+
+small {
+  font-family: "Arial", sans-serif; /* Tricky: If you miss a sans-serif font-family on body you'll need it here */
 }
