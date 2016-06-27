@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  margin: 0; /* Tricky: override browser default */
   padding: 68px 36px;
 }
 
@@ -62,7 +66,7 @@ nav a {
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   padding: 0 3px 0 8px;
-  width: 50%;
+  width: 644px;
 }
 
 .search-section button {
@@ -76,6 +80,7 @@ nav a {
 
 /* Tricky */
 .pages {
+  font-family: "Arial", sans-serif;
   font-size: 0;
 }
 
@@ -83,7 +88,7 @@ nav a {
   border: 1px solid #E0E0E0;
   display: inline-block;
   font-size: 15px; /* Tricky: ems don't work here !!!!! */
-  padding: 8px 12px;
+  padding: 5px 8px;
 }
 
 /* Tricky */
@@ -93,9 +98,52 @@ nav a {
 
 /* Tricky / students will often use too generic a css class name */
 .pages-box-left-curved {
-  border-radius: 15px 0 0 15px; /* 50% produces mismatched size of radius */
+  border-radius: 10px 0 0 10px; /* 50% produces mismatched size of radius */
 }
 
 .pages-box-right-curved {
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+/* stare at the abyss, and the abyss stares back at you */
+
+.row {
+}
+
+
+/* Tricky / bad idea long term, should be a class */
+time {
+  font-size: 0.7em;
+  color: #808080;
+}
+
+/* Hide Craigslist accessibility stuff */
+.screen-reader-text {
+  font-size: 0;
+}
+
+/* Tricky / Interaction not obvious and not annotated, first :hover */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tricky: That's not Times New Roman! */
+.pl {
+  font-family: "Bitstream Vera Serif","Times New Roman",serif;
+}
+
+/* Tricky: craigslist's actual CSS. note that row is a p tag, and this is a span class="p" INSIDE a p tag */
+.row span.p {
+  font-size: smaller; /* !@$% */
+  color: orange; /* OK if all of them are orange.. */
+  font-family: "Arial", sans-serif; /* Tricky: If you miss a sans-serif font-family on body you'll need it here */
+}
+
+/* Tricky: why an extra layer of nesting in html here? */
+.row span.p .maptag {
+  color: #080;
 }
