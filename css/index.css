@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 68px 36px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 762px;
+  padding: 4px;
+
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #cccccc;
+}
+
+nav {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+
+nav span {
+  border-left: 1px solid #d5d5d5;
+  border-right: 1px solid #AAAAAA;
+  margin-right: 5px;
+}
+
+nav a {
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+}
+
+.gl-logo {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 3px 5px 8px;
+}
+
+.gl-logo h1 {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-section input {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.45;
+  height: 2em;
+  letter-spacing: -0.5px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 0 3px 0 8px;
+  width: 50%;
+}
+
+.search-section button {
+  font-size: 1.1em;
+  height: 2em;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+}
