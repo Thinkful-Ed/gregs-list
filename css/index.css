@@ -4,6 +4,7 @@
 
 body {
   margin: 0; /* Tricky: override browser default */
+  padding: 80px;
 
   font-family: "Roboto", sans-serif;
 }
@@ -25,93 +26,9 @@ nav {
   top: 10px;
 }
 
-.gl-logo {
-  display: inline-block;
-  border-radius: 100%;
-  font-weight: 800;
-}
-
-.gl-logo h1 {
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+.nav-link {
   font-size: 18px;
-}
-
-.search-section {
-  margin-bottom: 2em;
-}
-
-.search-section input {
-  font-size: 1.1em;
-  font-weight: 500;
-  line-height: 1.45;
-  height: 2em;
-  letter-spacing: -0.5px;
-  border: 1px solid #DDDDDD;
-  border-radius: 4px;
-  padding: 0 3px 0 8px;
-  width: 644px;
-}
-
-.search-section button {
-  font-size: 1.1em;
-  height: 2em;
-  background-color: white;
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
-}
-
-
-/* Tricky */
-.pages {
-  font-size: 0;
-  margin-bottom: 32px; /* Tricky: 2em doesn't work because of font-size: 0; */
-}
-
-.pages-box {
-  border: 1px solid #E0E0E0;
-  display: inline-block;
-  font-size: 15px; /* Tricky: ems don't work for font size either here */
-  padding: 5px 8px;
-  color: #aaaaaa;
-}
-
-/* Tricky */
-.pages-box + .pages-box {
-  border-left-width: 0;
-}
-
-/* Tricky / students will often use too generic a css class name */
-.pages-box-left-curved {
-  border-radius: 10px 0 0 10px; /* 50% produces mismatched size of radius */
-}
-
-.pages-box-right-curved {
-  border-radius: 0 10px 10px 0;
-}
-
-.pages-box-black {
-  color: black;
-}
-
-/* stare at the abyss, and the abyss stares back at you */
-
-.row {
-  margin: .9em 0 1em ; /* almost impossible to get right w/o copy pasta */
-}
-
-
-/* Tricky / bad idea long term, should be a class */
-time {
-  font-size: 0.7em;
-  color: #808080;
-}
-
-/* Hide Craigslist accessibility stuff */
-.screen-reader-text {
-  font-size: 0;
+  padding: 0 6px;
 }
 
 /* Tricky / Interaction not obvious and not annotated, first :hover */
@@ -123,23 +40,75 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Tricky: That's not Times New Roman! */
-.pl {
-  font-family: "Bitstream Vera Serif","Times New Roman",serif;
+.rl-logo {
+  display: inline-block;
+  border-radius: 100%;
+  font-weight: 800;
 }
 
-/* Tricky: craigslist's actual CSS. note that row is a p tag, and this is a span class="p" INSIDE a p tag */
-.row span.p {
-  font-size: smaller; /* !@$% */
-  color: orange; /* OK if all of them are orange.. */
-  font-family: "Arial", sans-serif; /* Tricky: If you miss a sans-serif font-family on body you'll need it here */
+.rl-logo h1 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
 
-/* Tricky: why an extra layer of nesting in html here? */
-.row span.p .maptag {
-  color: #080;
+.search-section {
+  margin-bottom: 2em;
 }
 
-small {
-  font-family: "Arial", sans-serif; /* Tricky: If you miss a sans-serif font-family on body you'll need it here */
+.search-section input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2em;
+  height: 2em;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  padding: 0 0.25em 0 0.5em;
+  width: 400px;
+}
+
+.search-section button {
+  font-size: 1.1em;
+  height: 2em;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+}
+
+.pages {
+  margin-bottom: 2em;
+}
+
+.pages-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+}
+
+.pages-display {
+  padding: 0 1em;
+}
+
+.listings {
+  padding: 0;
+}
+
+.listing {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.listing-date ,
+.listing-location {
+  color: #999;
+}
+
+.listing-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
