@@ -26,9 +26,9 @@ header nav {
   top: 10px;
 }
 
-label[for="search"] {
-  display:block;
-  margin-bottom:8px;
+label {
+  display:  block;
+  margin-bottom: 8px;
 }
 
 .nav-link {
