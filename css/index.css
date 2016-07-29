@@ -20,10 +20,15 @@ header {
   border-bottom: 1px solid #DDDDDD;
 }
 
-nav {
+header nav {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+label[for="search"] {
+  display:block;
+  margin-bottom:8px;
 }
 
 .nav-link {
