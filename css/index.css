@@ -20,7 +20,7 @@ header {
   border-bottom: 1px solid #DDDDDD;
 }
 
-nav {
+header nav {
   position: absolute;
   right: 10px;
   top: 10px;
