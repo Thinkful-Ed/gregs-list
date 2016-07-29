@@ -72,14 +72,12 @@ a:hover {
   border-radius: 3px;
   padding: 0 5px 0 8px;
   width: 400px;
-
 }
 
 .search-section button {
   background-color: white;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
-
   height:30px;
   width:30px;
 }
