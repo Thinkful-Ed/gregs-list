@@ -28,7 +28,7 @@ header nav {
 
 label[for="search"] {
   display:block;
-  margin-bottom:.5em;
+  margin-bottom:8px;
 }
 
 .nav-link {
