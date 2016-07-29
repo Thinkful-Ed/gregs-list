@@ -40,6 +40,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.icon {
+  width:1.4em;
+  height:1.4em;
+}
+
 .rl-logo {
   display: inline-block;
   border-radius: 100%;
@@ -67,14 +72,16 @@ a:hover {
   border-radius: 3px;
   padding: 0 5px 0 8px;
   width: 400px;
+
 }
 
 .search-section button {
-  font-size: 17px;
-  height: 30px;
   background-color: white;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
+
+  height:30px;
+  width:30px;
 }
 
 .pages {
@@ -121,7 +128,12 @@ a:hover {
   margin-right: 8px;
 }
 
-.fa-star {
-  color: #999;
-  padding-right: 8px;
+.star {
+  fill: #999;
+  padding-right: .5em;
+  transform:translateY(.2em);
+}
+
+.star:hover {
+  fill:gold;
 }
