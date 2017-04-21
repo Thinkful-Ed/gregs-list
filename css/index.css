@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+.nav-bar {
   position: fixed;
   top: 0;
   left: 0;
