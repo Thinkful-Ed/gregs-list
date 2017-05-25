@@ -5,33 +5,16 @@
 body {
   margin: 0; /* Tricky: override browser default */
   padding: 80px;
-
   font-family: "Roboto", sans-serif;
+  font-size: 16px; /* Set baseline font-size for whole page */
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-
-  background-color: #EEEEEE;
-  border-bottom: 1px solid #DDDDDD;
+/* Create an even amount of space between all sectioning elements */
+nav, section {
+  margin-bottom: 30px;
 }
 
-.top-nav {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.nav-link {
-  font-size: 18px;
-  padding: 0 6px;
-}
-
-/* Tricky / Interaction not obvious and not annotated, first :hover */
+/* Tricky. Interaction not obvious and not annotated. */
 a {
   text-decoration: none;
 }
@@ -40,67 +23,90 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.top-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.nav-link {
+  font-size: 18px;
+  padding: 0 6px;
+}
+
 .rl-logo {
   display: inline-block;
-  border-radius: 100%;
   font-weight: 800;
+  
 }
 
 .rl-logo h1 {
+  font-size: 18px;
   font-weight: normal;
+  cursor: pointer; /* restore visual cue that this is clickable */
   margin: 0;
   padding: 0;
-  font-size: 18px;
+
 }
 
-.search-section {
-  margin-bottom: 30px;
-}
-
-label {
+.search-section .search-label {
   display: block;
   margin-bottom: 8px;
 }
 
-.search-section input {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 30px;
-  height: 30px;
+/* Note that, for consistency, 
+we choose to style the input using its class*/
+.search-section .search-field, 
+.search-section .search-button {
+  display: inline-block;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
-  padding: 0 5px 0 8px;
-  width: 400px;
+  
 }
 
-.search-section button {
-  font-size: 17px;
+.search-section input {
+  font-size: 16px; /* Must be set due to specificity weirdness of inputs */
+  font-weight: 500;
+  width: 400px;
   height: 30px;
+  padding: 0 5px 0 8px;
+  
+}
+
+.search-section .search-button {
+  width: 37px;
+  height: 30px;
+  padding: 2px 6px 3px 6px;
   background-color: white;
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
+  vertical-align: bottom;
 }
 
 .pages {
   display: inline-block; /* Tricky, this could start wrapping!  */
   font-size: 0;
-  margin-bottom: 30px;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
 }
 
-.pages-button {
-  font-size: 16px;
+.pages-button, 
+.pages-display {
   display: inline-block;
-  padding: 8px 15px;
-  border-radius: 3px;
+  font-size: 16px;
+  padding: 8px 25px;
 }
 
 .pages-display {
-  font-size: 16px;
-  padding: 0 30px;
-  padding: 8px 25px;
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
 }
@@ -114,22 +120,13 @@ label {
   margin-bottom: 15px;
 }
 
-.listing-date ,
+.listing-date,
 .listing-location {
   color: #999;
 }
 
 .listing-title {
-  font-weight: bold;
-  font-size: 17px;
+  font-weight: 700;
   margin-left: 8px;
   margin-right: 8px;
-}
-
-.search-button {
-  vertical-align: bottom;
-}
-
-.star-icon, .magnifying-glass-icon {
-  height: 100%;
 }
