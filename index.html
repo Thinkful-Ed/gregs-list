@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Layout Example</title>
+  <title>From Designs to Code – Solution</title>
+
   <!-- Responsive viewport tag, tells small screens that it's responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+  
   <div class="nav-bar">
     <a class="rl-logo">
       <h1>Greg's List</h1>
@@ -20,19 +25,21 @@
       <a href="#" class="nav-link">Account</a>
     </nav>
   </div>
+  
   <section class="search-section">
-    <form action="#">
-      <label for="search" class="search-label">Search Jobs</label>
+    <form action="#" class="search">
+      <label for="search-field" class="search-label">Search Jobs</label>
       <input type="text" id="search-field" class="search-field" placeholder="Developer, designer, internship...">
-      <input type="image" role="button" class="search-button" src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.6_challenge_design_to_code/magnifying-glass.png"
-        alt="Search">
+      <input type="image" class="search-button" src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.6_challenge_design_to_code/magnifying-glass.png" alt="Search">
     </form>
   </section>
+
   <nav class="pages">
-    <a class="pages-button">&lt; prev</a>
+    <a href="#" class="pages-button">&lt; prev</a>
     <span class="pages-display">1 to 100 of 179</span>
-    <a class="pages-button">next &gt;</a>
+    <a href="#" class="pages-button">next &gt;</a>
   </nav>
+
   <main>
     <ul class="listings">
       <li class="listing">
@@ -52,5 +59,6 @@
       </li>
     </ul>
   </main>
+  
 </body>
 </html>
