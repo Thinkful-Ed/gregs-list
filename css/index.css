@@ -9,7 +9,7 @@ body {
   font-size: 16px; /* Set baseline font-size for whole page */
 }
 
-/* Create an even amount of space between all sectioning elements */
+/* Create an even amount of space between major elements on page*/
 nav, section {
   margin-bottom: 30px;
 }
@@ -21,6 +21,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* remove dots and padding inherent to ULs*/
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .nav-bar {
@@ -37,7 +43,6 @@ a:hover {
   position: absolute;
   top: 10px;
   right: 10px;
-  
 }
 
 .nav-link {
@@ -48,7 +53,6 @@ a:hover {
 .rl-logo {
   display: inline-block;
   font-weight: 800;
-  
 }
 
 .rl-logo h1 {
@@ -60,33 +64,28 @@ a:hover {
 
 }
 
-.search-section .search-label {
+.search-label {
   display: block;
   margin-bottom: 8px;
 }
 
-/* Note that, for consistency, 
-we choose to style the input using its class*/
-.search-section .search-field, 
-.search-section .search-button {
+.search-field, 
+.search-button {
   display: inline-block;
+  height: 30px;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
-  
 }
 
-.search-section input {
+.search-field {
   font-size: 16px; /* Must be set due to specificity weirdness of inputs */
   font-weight: 500;
   width: 400px;
-  height: 30px;
   padding: 0 5px 0 8px;
-  
 }
 
-.search-section .search-button {
+.search-button {
   width: 37px;
-  height: 30px;
   padding: 2px 6px 3px 6px;
   background-color: white;
   vertical-align: bottom;
@@ -103,6 +102,7 @@ we choose to style the input using its class*/
 .pages-display {
   display: inline-block;
   font-size: 16px;
+  color: inherit; /* makes sure the links keep the color other elements use */
   padding: 8px 25px;
 }
 
@@ -111,18 +111,9 @@ we choose to style the input using its class*/
   border-right: 1px solid #DDDDDD;
 }
 
-.listings {
-  padding: 0;
-}
-
 .listing {
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-.listing-date,
-.listing-location {
   color: #999;
+  margin-top: 15px;
 }
 
 .listing-title {
